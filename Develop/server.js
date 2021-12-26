@@ -37,6 +37,30 @@ app.post('/api/notes', (req, res) => {
     });    
 });
 
+app.delete('/api/notes/:id', (req, res) => {
+    const id = req.params.id;
+    fs.readFile('./db/db.json', 'utf-8', (err, data) => {
+        const originalNote = JSON.parse(data);
+        const savedNotes = []; 
+        for (let index = 0; index < originalNote.length; index++) {
+            const element = originalNote[index];
+            if (element.id === id){
+                console.log('deleteing this item');
+            } else {
+                savedNotes.push(element);
+            }
+        }
+        fs.writeFile('./db/db.json', JSON.stringify(savedNotes), (err) => {
+            if (err) {
+                console.log(err);
+                res.json({ success: false });
+            } else {
+                res.json({ success: true });
+            }
+        });
+    });
+});
+
 app.get('/notes', function (req, res) {
     res.sendFile(path.join(__dirname, '/public/notes.html'));
 });
