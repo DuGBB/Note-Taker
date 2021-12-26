@@ -1,11 +1,1 @@
-[
-    {
-        "title":"Test Title",
-        "text":"Test text",
-        "id":"12346"
-    },
-    {
-        "title":"test2Yo",
-        "text":"BooBz",
-    "id": "987"    }
-]
+[{"title":"Test Title","text":"Test text","id":"12346"},{"title":"Notes are Working","text":"THEY DELETE, TOO!","id":"bf539f32-fdb8-4027-9d4b-e61c114cd0a6"},{"title":"Note3","text":"Third note","id":"b181fb22-2f1c-4815-a446-40cb6e33b8ec"}]
