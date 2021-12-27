@@ -39,3 +39,8 @@
 
   # Screenshot
   ![Note-Taker](Develop/public/assets/images/NoteTaker.png?raw=true "Note-Taker")
+
+  # Deployed Heroku URL
+
+  To view the heroku deployed URL, open this link in the browser of your choice: 
+  https://immense-temple-83892.herokuapp.com
